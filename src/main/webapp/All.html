@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+  border-right:3px solid #bbb;
+}
+li:last-child {
+  border-right:3px solid #bbb;
+}
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 34px 36px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+<form action="All" method="post">
+<ul>
+<li><a href="Principle.html">Principle Details</a><br><br></li>
+<li><a href="Student.html">Student Details</a><br><br></li>
+<li><a href="Teacher.html">Teacher Details</a></li>
+</ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: block;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333333;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    a:hover {
+        background-color: #f2f2f2;
+    }
+
+    a.insert {
+        background-color: #4CAF50;
+        color: #ffffff;
+    }
+
+    a.update {
+        background-color: #FF9800;
+        color: #ffffff;
+    }
+
+    a.delete {
+        background-color: #F44336;
+        color: #ffffff;
+    }
+
+    a.view {
+        background-color: #2196F3;
+        color: #ffffff;
+    }
+
+    a:before {
+        content: "\25BA";
+        margin-right: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    li:hover a:before {
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 24px;
+        }
+
+        a {
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+<h1>TEACHER DETAILS</h1>
+<form>
+    <ul>
+        <li><a href="TeachInsert.html" class="insert">Insert Teacher Details</a></li>
+        <li><a href="TeachUpdate.html" class="update">Update Teacher Details</a></li>
+        <li><a href="TeachDelete.html" class="delete">Delete Teacher Details</a></li>
+        <li><a href="TeachFetch.html" class="view">View Teacher Details</a></li>
+    </ul>
+</form>
+</body>
+</html>

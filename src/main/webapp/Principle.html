@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #ffffff;
+        background-color: #000000;
+        padding: 10px;
+        text-align: center;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #4CAF50;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<form action="account">
+    <h1>Principle Details</h1>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="Name" placeholder="Enter the name"><br><br>
+
+    <label for="age">Age</label>
+    <input type="text" id="age" name="Age" placeholder="Enter the age"><br><br>
+
+    <label for="mobile">Mobile Number</label>
+    <input type="text" id="mobile" name="MobileNumber" placeholder="Enter the mobile number"><br><br>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="Email" placeholder="Enter the email"><br><br>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="Password" placeholder="Enter the password"><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>

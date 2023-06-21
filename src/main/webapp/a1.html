@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .student-list,
+    .teacher-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .student-list li,
+    .teacher-list li {
+      margin-bottom: 10px;
+    }
+
+    .student-list li span,
+    .teacher-list li span {
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type="text"],
+    .form-container select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-container .button {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>School Management System</h1>
+    
+    <div class="section">
+      <h2 class="section-title">Students</h2>
+      <ul class="student-list">
+        <li><span>John Doe</span> - Grade 8</li>
+        <li><span>Jane Smith</span> - Grade 10</li>
+        <li><span>Michael Johnson</span> - Grade 9</li>
+      </ul>
+      <a href="#" class="button">Add Student</a>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">Teachers</h2>
+      <ul class="teacher-list">
+        <li><span>Mr. Anderson</span> - Math</li>
+        <li><span>Ms. Davis</span> - English</li>
+        <li><span>Mr. Thompson</span> - Science</li>
+      </ul>
+      <a href="#" class="button">Add Teacher</a>
+    </div>
+    
+    <div class="form-container" id="add-student-form" style="display: none;">
+      <h2>Add Student</h2>
+      <form>
+        <input type="text" placeholder="Student Name" required>
+        <input type="text" placeholder="Grade" required>
+        <input type="submit" value="Add Student" class="button">
+      </form>
+    </div>
+    
+    <div class="form-container" id="add-teacher-form" style="display: none;">
+      <h2>Add Teacher</h2>
+      <form>
+        <input type="text" placeholder="Teacher Name" required>
+        <input type="text" placeholder="Subject" required>
+        <input type="submit" value="Add Teacher" class="button">
+      </form>
+    </div>
+  </div>
+
+  
+</body>
+</html>

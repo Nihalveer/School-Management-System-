@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    .login-container {
+        width: 400px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    }
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .login-container label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333333;
+        font-weight: bold;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: none;
+        border-bottom: 1px solid #cccccc;
+        background-color: #f2f2f2;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .login-container input[type="text"]:focus,
+    .login-container input[type="password"]:focus {
+        outline: none;
+        border-bottom: 1px solid #4CAF50;
+    }
+    .login-container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .login-container input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .login-container .form-footer {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .login-container .form-footer a {
+        color: #333333;
+        text-decoration: none;
+    }
+    .login-container .form-footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<div class="login-container">
+    <h2>User Login</h2>
+    <form action="Login" method="post">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+
+        <input type="submit" value="Login">
+
+        <div class="form-footer">
+            <a href="#">Forgot Password?</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

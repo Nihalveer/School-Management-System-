@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    fieldset {
+        border: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    legend {
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        display: inline-block;
+        width: 49%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: #ffffff;
+    }
+
+    input[type="reset"] {
+        background-color: #f44336;
+        color: #ffffff;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        opacity: 0.8;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #333333;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<h1>Student Insertion Form</h1><br>
+<a href="All.html">Main Menu</a><br>
+<form action="Add" method="post">
+<fieldset>
+<legend>Student Details:</legend>
+<label for="id">ID:</label>
+<input type="text" name="id" id="id"><br><br>
+<label for="sname">STUDENT NAME:</label>
+<input type="text" name="sname" id="sname"><br><br>
+<label for="stream">STREAM:</label>
+<input type="text" name="stream" id="stream"><br><br>
+<label for="fees">FEES:</label>
+<input type="text" name="fees" id="fees"><br><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</fieldset>
+</form>
+</body>
+</html>
